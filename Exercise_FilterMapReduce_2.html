@@ -1,0 +1,28 @@
+<p>List of expensive (cost is more than 3000) vehicle ownership</p>
+
+<ul>
+<li data-cost=1000>Sepeda</li>
+<li data-cost=3000>Motor</li>
+<li data-cost=8000>Mobil</li>
+<li data-cost=11000>Bis</li>
+<li data-cost=2000>Becak</li>
+<li data-cost=10000>Truk</li>
+</ul>
+
+<p>Total Price is: </p>
+<p id="result"></p>
+
+<script>
+let costs = Array.from(document.querySelectorAll('[data-cost]'))
+
+.map(item => item.dataset.cost)
+.map(function(x){
+  return parseInt(x);
+})
+.filter((x) => x > 3000)
+.reduce((acc, cur) => acc + cur);
+
+console.log(costs);
+
+document.getElementById("result").textContent = costs;
+</script>
