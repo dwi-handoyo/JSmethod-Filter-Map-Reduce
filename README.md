@@ -22,6 +22,7 @@ const result = array.map(element => element * 3);
 console.log(result);
 
 3. Reduce
+
 Reduce() method executes a reducer function for array element. Reduce() method returns a single value: the function's accumulated result. The reduce() method does not execute the function for empty array elements. The reduce() method does not change.
 Reduce() metode mengeksekusi fungsi peredam untuk elemen array. Reduce() metode mengembalikan nilai tunggal: hasil akumulasi fungsi. Metode reduce() tidak menjalankan fungsi untuk elemen array kosong. Metode reduce() tidak berubah.
 
@@ -30,6 +31,7 @@ const result = array.reduce((acc, cur) => acc + cur);
 console.log(result);
 
 4. Chaining Method
+
 Method chaining is when methods are invoked from one object to another without creating intermediate variables. In otherwords it is a single statement of multiple method invocations which we instruct our program to perform.
 Metode chaining adalah ketika metode dipanggil dari satu objek ke objek lain tanpa membuat variabel perantara. Dengan kata lain, ini adalah pernyataan tunggal dari beberapa pemanggilan metode yang kita instruksikan untuk dilakukan oleh program kita.
 
