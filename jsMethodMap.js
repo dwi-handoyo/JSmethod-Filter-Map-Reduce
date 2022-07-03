@@ -16,7 +16,44 @@ const angka = [-1, 8, 9, 1, 4, -5, -4, 3, 2, 9];
 
 const mahasiswa = ['Andromeda', 'Bima Sakti', 'Solar System'];
 
-// A. Map method with normal function 
+
+// A. Map Method with Function Declaration
+
+  // Example-1
+function newAngka(x){
+ return x.map(function(angka){
+  return angka * 2;
+ });
+}
+console.log(newAngka(angka)); // result: [-2, 16, 18, 2, 8, -10, -8, 6, 4, 18]
+
+  // Example-2
+function strLength(x){
+ return x.map( function(nama){
+  return nama.length;
+ }); 
+}
+console.log(strLength(mahasiswa)); // result: [9, 10, 12]
+
+  // Example-3
+function mhsObject(x){
+ return x.map(function(nama){
+  return {nama: nama, letters: nama.length}
+ });
+}
+console.log(mhsObject(mahasiswa));
+// result: [{letters: 9,
+//   nama: "Andromeda"
+//   }, {
+//   letters: 10,
+//   nama: "Bima Sakti"
+//   }, {
+//   letters: 12,
+//   nama: "Solar System"
+//   }]
+
+
+// B. Map method with Function Expression 
 
   // Example-1
 const newAngka1 = angka.map( function(a) {
@@ -46,7 +83,7 @@ console.log(mhsObject1);
 //   }]
 
 
-// B. Map method with arrow function 
+// C. Map method with Arrow Function 
 
   // Example-1
 const newAngka2 = angka.map( (a) => {
@@ -76,7 +113,7 @@ console.log(mhsObject2);
 //   }]
 
 
-// C. Map method with arrow function in one line
+// D. Map method with Arrow Function in Single Line
 
   // Example-1:
 const newAngka3 = angka.map( a => a * 2);
