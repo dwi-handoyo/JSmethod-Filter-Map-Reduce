@@ -12,6 +12,12 @@ const array = [a, b, c, d, e, f, g, h];
 const result = array.filter(element => element > 3);
 console.log(result);
 
+* https://github.com/dwi-handoyo/JSmethod-Filter-Map-Reduce/blob/main/jsMethodFilterNormalFunction.js
+
+* https://github.com/dwi-handoyo/JSmethod-Filter-Map-Reduce/blob/main/jsMethodFilterArrowFunction.js
+
+* https://github.com/dwi-handoyo/JSmethod-Filter-Map-Reduce/blob/main/forLoopFilter.js
+
 2. Map
 
 Map() creates a new array from calling a function for every array element. It calls a function once for each element in an array. map() does not execute the function for empty elements. map() does not change the original array.
@@ -21,6 +27,8 @@ const array = [a, b, c, d, e, f, g, h];
 const result = array.map(element => element * 3);
 console.log(result);
 
+* https://github.com/dwi-handoyo/JSmethod-Filter-Map-Reduce/blob/main/jsMethodMap.js
+
 3. Reduce
 
 Reduce() method executes a reducer function for array element. Reduce() method returns a single value: the function's accumulated result. The reduce() method does not execute the function for empty array elements. The reduce() method does not change.
@@ -29,6 +37,8 @@ Reduce() metode mengeksekusi fungsi peredam untuk elemen array. Reduce() metode 
 const array = [a, b, c, d, e, f, g, h];
 const result = array.reduce((acc, cur) => acc + cur);
 console.log(result);
+
+* https://github.com/dwi-handoyo/JSmethod-Filter-Map-Reduce/blob/main/jsMethodReduce.js
 
 4. Chaining Method
 
@@ -40,3 +50,14 @@ const result = array.filter(element => element > 5)
  .map(element => element * 3)
  .reduce((acc, cur) => acc + cur);
 console.log(result)
+
+* https://github.com/dwi-handoyo/JSmethod-Filter-Map-Reduce/blob/main/jsMethodChaining.js
+
+5. Exercise
+
+* https://github.com/dwi-handoyo/JSmethod-Filter-Map-Reduce/blob/main/Exercise_FilterMapReduce_1.html
+
+* https://github.com/dwi-handoyo/JSmethod-Filter-Map-Reduce/blob/main/Exercise_FilterMapReduce_2.html
+
+
+
